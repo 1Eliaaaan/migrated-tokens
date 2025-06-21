@@ -1,11 +1,29 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const { io } = require('socket.io-client');
 const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
 
 const app = express();
+
+// CORS Configuration
+const allowedOrigins = process.env.CORS_ALLOWED_ORIGINS ? process.env.CORS_ALLOWED_ORIGINS.split(',') : [];
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+        if (allowedOrigins.indexOf(origin) === -1) {
+            const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+            return callback(new Error(msg), false);
+        }
+        return callback(null, true);
+    }
+};
+
+app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL || 'https://api.arenapro.io/tokens?order=migration_time.desc&lp_deployed=eq.true&limit=10';
