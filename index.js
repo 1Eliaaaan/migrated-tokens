@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const { io } = require('socket.io-client');
 const axios = require('axios');
@@ -7,9 +8,9 @@ const path = require('path');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const API_URL = 'https://api.arenapro.io/tokens?order=migration_time.desc&lp_deployed=eq.true&limit=10';
+const API_URL = process.env.API_URL || 'https://api.arenapro.io/tokens?order=migration_time.desc&lp_deployed=eq.true&limit=10';
 const TOKENS_FILE_PATH = path.join(__dirname, 'tokens.json');
-const EXTERNAL_WS_URL = 'https://rugfi-bk-v2-production.up.railway.app/';
+const EXTERNAL_WS_URL = process.env.EXTERNAL_WS_URL || 'https://rugfi-bk-v2-production.up.railway.app/';
 
 const socket = io(EXTERNAL_WS_URL, {
     reconnection: true,
