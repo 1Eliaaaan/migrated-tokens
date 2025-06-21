@@ -85,7 +85,7 @@ const transformTokenData = (tokens) => {
         tokenContractAddress: token.token_contract_address,
         tokenName: token.token_name,
         tokenSymbol: token.token_symbol,
-        createdAt: token.create_time,
+        createdAt: new Date(token.create_time * 1000).toISOString(),
         arenaUserInfo: {
             community: {
                 photoURL: token.photo_url,
@@ -112,7 +112,7 @@ const transformTokenData = (tokens) => {
                     lastMarketCap: token.latest_price_usd,
                     marketCapUsd: token.latest_price_usd,
                     totalSupply: token.latest_supply_eth,
-                    createdOn: token.create_time,
+                    createdOn: new Date(token.create_time * 1000).toISOString(),
                     holders: token.latest_holder_count,
                 }
             }
