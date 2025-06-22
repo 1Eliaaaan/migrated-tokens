@@ -32,7 +32,7 @@ app.use(cors(corsOptions));
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL || 'https://api.arenapro.io/tokens?order=migration_time.desc&lp_deployed=eq.true&limit=10';
 const TOKENS_FILE_PATH = path.join(__dirname, 'tokens.json');
-const ABOUT_TO_MIGRATE_API_URL = process.env.ABOUT_TO_MIGRATE_API_URL || 'https://api.arenapro.io/tokens?order=latest_supply_eth.desc&lp_deployed=eq.false&limit=50';
+const ABOUT_TO_MIGRATE_API_URL = process.env.ABOUT_TO_MIGRATE_API_URL || 'https://api.arenapro.io/tokens?order=latest_supply_eth.desc&lp_deployed=eq.false&limit=10';
 const ABOUT_TO_MIGRATE_FILE_PATH = path.join(__dirname, 'tokensAboutToMigrate.json');
 const EXTERNAL_WS_URL = process.env.EXTERNAL_WS_URL || 'https://rugfi-bk-v2-production.up.railway.app/';
 
