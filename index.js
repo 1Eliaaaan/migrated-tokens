@@ -32,6 +32,8 @@ app.use(cors(corsOptions));
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL || 'https://api.arenapro.io/tokens?order=migration_time.desc&lp_deployed=eq.true&limit=10';
 const TOKENS_FILE_PATH = path.join(__dirname, 'tokens.json');
+const ABOUT_TO_MIGRATE_API_URL = process.env.ABOUT_TO_MIGRATE_API_URL || 'https://api.arenapro.io/tokens?order=latest_supply_eth.desc&lp_deployed=eq.false&limit=50';
+const ABOUT_TO_MIGRATE_FILE_PATH = path.join(__dirname, 'tokensAboutToMigrate.json');
 const EXTERNAL_WS_URL = process.env.EXTERNAL_WS_URL || 'https://rugfi-bk-v2-production.up.railway.app/';
 
 const socket = io(EXTERNAL_WS_URL, {
@@ -62,10 +64,31 @@ const fetchTokens = async () => {
     }
 };
 
+const fetchTokensAboutToMigrate = async () => {
+    try {
+        const response = await axios.get(ABOUT_TO_MIGRATE_API_URL);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching tokens about to migrate:', error.message);
+        return null;
+    }
+};
+
 const readTokensFromFile = async () => {
     try {
         await fs.access(TOKENS_FILE_PATH);
         const fileContent = await fs.readFile(TOKENS_FILE_PATH, 'utf-8');
+        return JSON.parse(fileContent);
+    } catch (error) {
+        // If file doesn't exist or is empty/invalid json
+        return [];
+    }
+};
+
+const readTokensAboutToMigrateFromFile = async () => {
+    try {
+        await fs.access(ABOUT_TO_MIGRATE_FILE_PATH);
+        const fileContent = await fs.readFile(ABOUT_TO_MIGRATE_FILE_PATH, 'utf-8');
         return JSON.parse(fileContent);
     } catch (error) {
         // If file doesn't exist or is empty/invalid json
@@ -128,6 +151,14 @@ const writeTokensToFile = async (tokens) => {
     }
 };
 
+const writeTokensAboutToMigrateToFile = async (tokens) => {
+    try {
+        await fs.writeFile(ABOUT_TO_MIGRATE_FILE_PATH, JSON.stringify(tokens, null, 2));
+    } catch (error) {
+        console.error('Error writing tokens about to migrate to file:', error.message);
+    }
+};
+
 const monitorTokens = async () => {
     console.log('Checking for new tokens...');
     const rawTokens = await fetchTokens();
@@ -153,6 +184,31 @@ const monitorTokens = async () => {
     }
 };
 
+const monitorTokensAboutToMigrate = async () => {
+    console.log('Checking for new tokens about to migrate...');
+    const rawTokens = await fetchTokensAboutToMigrate();
+    if (!rawTokens) {
+        return;
+    }
+
+    const newTokens = transformTokenData(rawTokens);
+    const oldTokens = await readTokensAboutToMigrateFromFile();
+
+    // Simple comparison by stringifying the objects
+    if (JSON.stringify(newTokens) !== JSON.stringify(oldTokens)) {
+        console.log('Tokens about to migrate data has changed. Updating file and notifying external server.');
+        await writeTokensAboutToMigrateToFile(newTokens);
+        if (socket.connected) {
+            socket.emit('token_about_to_migrate_update', newTokens);
+            console.log('Event "token_about_to_migrate_update" sent to external server.');
+        } else {
+            console.log('Cannot send event, socket is not connected.');
+        }
+    } else {
+        console.log('No changes detected in tokens about to migrate.');
+    }
+};
+
 app.get('/tokens', async (req, res) => {
     try {
         const tokens = await readTokensFromFile();
@@ -163,9 +219,21 @@ app.get('/tokens', async (req, res) => {
     }
 });
 
+app.get('/tokens-about-to-migrate', async (req, res) => {
+    try {
+        const tokens = await readTokensAboutToMigrateFromFile();
+        res.json(tokens);
+    } catch (error) {
+        console.error('Error reading tokens about to migrate for API endpoint:', error.message);
+        res.status(500).json({ error: 'Failed to retrieve tokens about to migrate data.' });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Monitoring service is running on http://localhost:${PORT}`);
     // Start monitoring immediately and then every 3 seconds
     monitorTokens();
+    monitorTokensAboutToMigrate();
     setInterval(monitorTokens, 3000);
+    setInterval(monitorTokensAboutToMigrate, 3000);
 }); 
