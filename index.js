@@ -235,5 +235,5 @@ app.listen(PORT, () => {
     monitorTokens();
     monitorTokensAboutToMigrate();
     setInterval(monitorTokens, 3000);
-    setInterval(monitorTokensAboutToMigrate, 3000);
+    setInterval(monitorTokensAboutToMigrate, 10000);
 }); 
