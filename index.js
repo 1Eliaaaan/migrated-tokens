@@ -75,8 +75,10 @@ const fetchTokensAboutToMigrate = async () => {
 };
 
 const fetchRugVerifierData = async (creatorAddress) => {
+
     try {
         const response = await axios.get(`https://rugfi-bk-v2-production.up.railway.app/api/token/rug-verifier/${creatorAddress}`);
+        console.log(response.data)
         return response.data;
     } catch (error) {
         console.error(`Error fetching rug verifier data for ${creatorAddress}:`, error.message);
@@ -123,7 +125,7 @@ const transformTokenData = (tokens) => {
         tokenName: token.token_name,
         tokenSymbol: token.token_symbol,
         createdAt: new Date(token.create_time * 1000).toISOString(),
-        rugData: token.rugVerifierData || null,
+        rugData: token.rugData || null,
         arenaUserInfo: {
             community: {
                 photoURL: token.photo_url,
@@ -259,21 +261,21 @@ app.get('/tokens', async (req, res) => {
     }
 });
 
-// app.get('/tokens-about-to-migrate', async (req, res) => {
-//     try {
-//         const tokens = await readTokensAboutToMigrateFromFile();
-//         res.json(tokens);
-//     } catch (error) {
-//         console.error('Error reading tokens about to migrate for API endpoint:', error.message);
-//         res.status(500).json({ error: 'Failed to retrieve tokens about to migrate data.' });
-//     }
-// });
+app.get('/tokens-about-to-migrate', async (req, res) => {
+    try {
+        const tokens = await readTokensAboutToMigrateFromFile();
+        res.json(tokens);
+    } catch (error) {
+        console.error('Error reading tokens about to migrate for API endpoint:', error.message);
+        res.status(500).json({ error: 'Failed to retrieve tokens about to migrate data.' });
+    }
+});
 
 app.listen(PORT, () => {
     console.log(`Monitoring service is running on http://localhost:${PORT}`);
     // Start monitoring immediately and then every 3 seconds
     monitorTokens();
-    // monitorTokensAboutToMigrate();
+    monitorTokensAboutToMigrate();
     setInterval(monitorTokens, process.env.TOKENS_INTERVAL);
-    // setInterval(monitorTokensAboutToMigrate, process.env.TOKENS_ABOUT_TO_INTERVAL);
+    setInterval(monitorTokensAboutToMigrate, process.env.TOKENS_ABOUT_TO_INTERVAL);
 }); 
