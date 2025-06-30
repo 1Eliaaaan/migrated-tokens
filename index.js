@@ -206,20 +206,33 @@ const monitorTokensAboutToMigrate = async () => {
         return;
     }
 
-    // Fetch rug verifier data for each token
-    console.log('Fetching rug verifier data for each token...');
+    const oldTokens = await readTokensAboutToMigrateFromFile();
+    // Create a map for quick lookup by tokenId
+    const oldTokensMap = new Map();
+    for (const t of oldTokens) {
+        oldTokensMap.set(t.tokenId, t);
+    }
+
+    // For each token, if it exists in oldTokens, reuse rugData; otherwise, fetch it
     const tokensWithRugData = await Promise.all(
         rawTokens.map(async (token) => {
-            const rugVerifierData = await fetchRugVerifierData(token.creator_address);
-            return {
-                ...token,
-                rugVerifierData
-            };
+            const oldToken = oldTokensMap.get(token.token_id);
+            if (oldToken && oldToken.rugData) {
+                return {
+                    ...token,
+                    rugData: oldToken.rugData
+                };
+            } else {
+                const rugData = await fetchRugVerifierData(token.creator_address);
+                return {
+                    ...token,
+                    rugData
+                };
+            }
         })
     );
 
     const newTokens = transformTokenData(tokensWithRugData);
-    const oldTokens = await readTokensAboutToMigrateFromFile();
 
     // Simple comparison by stringifying the objects
     if (JSON.stringify(newTokens) !== JSON.stringify(oldTokens)) {

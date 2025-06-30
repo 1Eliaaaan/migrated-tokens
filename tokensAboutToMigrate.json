@@ -8,21 +8,7 @@
     "tokenName": "ZOG ARENA",
     "tokenSymbol": "ZOG",
     "createdAt": "2025-06-29T09:48:24.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "84053",
-          "name": "ZOG ARENA",
-          "transfervalue": "2481062577.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "6/29/2025, 9:48:24 AM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/58c9a5dd-5e96-3252-79c8-61ccec2827ec1751190465740.jpeg",
@@ -41,16 +27,16 @@
           "handle": null
         },
         "stats": {
-          "totalVolume": 12342.076946143396,
-          "txs": 212,
-          "price": 0.0000023856097919696394,
-          "lastPrice": 0.0000023856097919696394,
-          "marketCap": 0.0000023856097919696394,
-          "lastMarketCap": 0.0000023856097919696394,
-          "marketCapUsd": 0.0000023856097919696394,
-          "totalSupply": 5756040567,
+          "totalVolume": 13032.338097228489,
+          "txs": 231,
+          "price": 0.0000023980625342030827,
+          "lastPrice": 0.0000023980625342030827,
+          "marketCap": 0.0000023980625342030827,
+          "lastMarketCap": 0.0000023980625342030827,
+          "marketCapUsd": 0.0000023980625342030827,
+          "totalSupply": 5771044109,
           "createdOn": "2025-06-29T09:48:24.000Z",
-          "holders": 182
+          "holders": 194
         }
       }
     }
@@ -64,21 +50,7 @@
     "tokenName": "raw bull",
     "tokenSymbol": "RAWBULL",
     "createdAt": "2025-06-12T00:20:30.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 1,
-      "rugs": [
-        {
-          "id": "52595",
-          "name": "raw bull",
-          "transfervalue": "4508389901.0",
-          "saleAmount": "4508389901.0",
-          "rug": true,
-          "date": "6/12/2025, 12:20:30 AM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/07a534ba-2930-393e-853a-79dc952eeea51749687607807.jpeg",
@@ -120,21 +92,7 @@
     "tokenName": "BOFU is Evil",
     "tokenSymbol": "BOFU",
     "createdAt": "2025-06-25T20:29:24.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "78365",
-          "name": "BOFU is Evil",
-          "transfervalue": "1450934197.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "6/25/2025, 8:29:24 PM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/7ef15f2a-ce8f-92e1-f609-aacc1ad11b141750883283862.jpeg",
@@ -153,16 +111,16 @@
           "handle": "Bofuisevil"
         },
         "stats": {
-          "totalVolume": 67498.85098845791,
-          "txs": 1769,
-          "price": 0.0000014112022463182394,
-          "lastPrice": 0.0000014112022463182394,
-          "marketCap": 0.0000014112022463182394,
-          "lastMarketCap": 0.0000014112022463182394,
-          "marketCapUsd": 0.0000014112022463182394,
-          "totalSupply": 4438952807,
+          "totalVolume": 67655.71514516356,
+          "txs": 2344,
+          "price": 0.0000014597867535708349,
+          "lastPrice": 0.0000014597867535708349,
+          "marketCap": 0.0000014597867535708349,
+          "lastMarketCap": 0.0000014597867535708349,
+          "marketCapUsd": 0.0000014597867535708349,
+          "totalSupply": 4536599827,
           "createdOn": "2025-06-25T20:29:24.000Z",
-          "holders": 557
+          "holders": 731
         }
       }
     }
@@ -176,21 +134,7 @@
     "tokenName": "WifeWeddingRing",
     "tokenSymbol": "RING",
     "createdAt": "2025-06-15T14:26:47.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "61199",
-          "name": "WifeWeddingRing",
-          "transfervalue": "1562971483.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "6/15/2025, 2:26:47 PM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/d38bd375-9b82-2c9f-9049-ef860a0c68e71749997534426.jpeg",
@@ -232,21 +176,7 @@
     "tokenName": "Pop The Snake",
     "tokenSymbol": "POP",
     "createdAt": "2025-06-29T22:11:11.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "84799",
-          "name": "Pop The Snake",
-          "transfervalue": "1151607235.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "6/29/2025, 10:11:11 PM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/fd4930c6-870c-e49c-fe6a-5a84cb38dc861751235040660.jpeg",
@@ -265,16 +195,16 @@
           "handle": null
         },
         "stats": {
-          "totalVolume": 2094.1725581291325,
-          "txs": 99,
-          "price": 0.0000013557623394912908,
-          "lastPrice": 0.0000013557623394912908,
-          "marketCap": 0.0000013557623394912908,
-          "lastMarketCap": 0.0000013557623394912908,
-          "marketCapUsd": 0.0000013557623394912908,
-          "totalSupply": 4342075015,
+          "totalVolume": 2143.7408858759995,
+          "txs": 107,
+          "price": 0.0000013732672517463082,
+          "lastPrice": 0.0000013732672517463082,
+          "marketCap": 0.0000013732672517463082,
+          "lastMarketCap": 0.0000013732672517463082,
+          "marketCapUsd": 0.0000013732672517463082,
+          "totalSupply": 4367185844,
           "createdOn": "2025-06-29T22:11:11.000Z",
-          "holders": 39
+          "holders": 44
         }
       }
     }
@@ -288,21 +218,7 @@
     "tokenName": "Red Frooogs Ecosystem",
     "tokenSymbol": "REDFO",
     "createdAt": "2025-05-10T01:16:29.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "9290",
-          "name": "Red Frooogs Ecosystem",
-          "transfervalue": "575803617.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "5/10/2025, 1:16:29 AM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/6508a3ad-ed36-5dab-90b7-1230f53dec051746839485488.jpeg",
@@ -321,13 +237,13 @@
           "handle": "red_frog_lady"
         },
         "stats": {
-          "totalVolume": 137629.77870847748,
-          "txs": 1420,
-          "price": 0.0000012423387266560556,
-          "lastPrice": 0.0000012423387266560556,
-          "marketCap": 0.0000012423387266560556,
-          "lastMarketCap": 0.0000012423387266560556,
-          "marketCapUsd": 0.0000012423387266560556,
+          "totalVolume": 137633.49011504577,
+          "txs": 1421,
+          "price": 0.000001244103037953397,
+          "lastPrice": 0.000001244103037953397,
+          "marketCap": 0.000001244103037953397,
+          "lastMarketCap": 0.000001244103037953397,
+          "marketCapUsd": 0.000001244103037953397,
           "totalSupply": 4238016681,
           "createdOn": "2025-05-10T01:16:29.000Z",
           "holders": 304
@@ -344,21 +260,7 @@
     "tokenName": "NN",
     "tokenSymbol": "NN",
     "createdAt": "2025-05-06T21:27:08.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "1",
-          "name": "NN",
-          "transfervalue": "N/A",
-          "saleAmount": null,
-          "rug": false,
-          "date": "5/6/2025, 9:27:08 PM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/c98e9e8c-f899-32fd-10c6-e6e5c62b1dda1746566780325.jpeg",
@@ -400,12 +302,7 @@
     "tokenName": "Vitrene",
     "tokenSymbol": "VIT",
     "createdAt": "2025-05-07T17:07:06.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 0,
-      "totalRugs": 0,
-      "rugs": []
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/735bec20-7f4a-613e-10b2-816e7d7a140c1746637576890.jpeg",
@@ -447,21 +344,7 @@
     "tokenName": "TheWolfgangAVAX",
     "tokenSymbol": "WOLF",
     "createdAt": "2025-06-12T00:23:36.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 1,
-      "totalRugs": 1,
-      "rugs": [
-        {
-          "id": "52599",
-          "name": "TheWolfgangAVAX",
-          "transfervalue": "1883491815.0",
-          "saleAmount": "1883491815.0",
-          "rug": true,
-          "date": "6/12/2025, 12:23:36 AM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/3c30b1af-2d4b-a480-a3f2-dfc5bbc3dac31749687769777.jpeg",
@@ -503,29 +386,7 @@
     "tokenName": "NOTHING",
     "tokenSymbol": "NOTHING",
     "createdAt": "2025-06-26T19:34:57.000Z",
-    "rugData": {
-      "success": true,
-      "totalTokens": 2,
-      "totalRugs": 0,
-      "rugs": [
-        {
-          "id": "80087",
-          "name": "NOTHING",
-          "transfervalue": "2481062577.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "6/26/2025, 7:34:57 PM"
-        },
-        {
-          "id": "80067",
-          "name": "NOTHING",
-          "transfervalue": "1969220672.0",
-          "saleAmount": null,
-          "rug": false,
-          "date": "6/26/2025, 7:14:11 PM"
-        }
-      ]
-    },
+    "rugData": null,
     "arenaUserInfo": {
       "community": {
         "photoURL": "https://static.starsarena.com/uploads/203a5242-d9ff-777e-c330-af01a4afabff1750966407260.jpeg",
@@ -544,14 +405,14 @@
           "handle": "NFT_GOD_666"
         },
         "stats": {
-          "totalVolume": 2623.575222043123,
-          "txs": 56,
-          "price": 0.0000011041445365810482,
-          "lastPrice": 0.0000011041445365810482,
-          "marketCap": 0.0000011041445365810482,
-          "lastMarketCap": 0.0000011041445365810482,
-          "marketCapUsd": 0.0000011041445365810482,
-          "totalSupply": 3893433591,
+          "totalVolume": 2611.409493307927,
+          "txs": 57,
+          "price": 0.000001082143055549002,
+          "lastPrice": 0.000001082143055549002,
+          "marketCap": 0.000001082143055549002,
+          "lastMarketCap": 0.000001082143055549002,
+          "marketCapUsd": 0.000001082143055549002,
+          "totalSupply": 3876738255,
           "createdOn": "2025-06-26T19:34:57.000Z",
           "holders": 48
         }
