@@ -259,21 +259,21 @@ app.get('/tokens', async (req, res) => {
     }
 });
 
-app.get('/tokens-about-to-migrate', async (req, res) => {
-    try {
-        const tokens = await readTokensAboutToMigrateFromFile();
-        res.json(tokens);
-    } catch (error) {
-        console.error('Error reading tokens about to migrate for API endpoint:', error.message);
-        res.status(500).json({ error: 'Failed to retrieve tokens about to migrate data.' });
-    }
-});
+// app.get('/tokens-about-to-migrate', async (req, res) => {
+//     try {
+//         const tokens = await readTokensAboutToMigrateFromFile();
+//         res.json(tokens);
+//     } catch (error) {
+//         console.error('Error reading tokens about to migrate for API endpoint:', error.message);
+//         res.status(500).json({ error: 'Failed to retrieve tokens about to migrate data.' });
+//     }
+// });
 
 app.listen(PORT, () => {
     console.log(`Monitoring service is running on http://localhost:${PORT}`);
     // Start monitoring immediately and then every 3 seconds
     monitorTokens();
-    monitorTokensAboutToMigrate();
+    // monitorTokensAboutToMigrate();
     setInterval(monitorTokens, process.env.TOKENS_INTERVAL);
-    setInterval(monitorTokensAboutToMigrate, process.env.TOKENS_ABOUT_TO_INTERVAL);
+    // setInterval(monitorTokensAboutToMigrate, process.env.TOKENS_ABOUT_TO_INTERVAL);
 }); 
