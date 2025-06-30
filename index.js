@@ -74,6 +74,20 @@ const fetchTokensAboutToMigrate = async () => {
     }
 };
 
+const fetchRugVerifierData = async (creatorAddress) => {
+    try {
+        const response = await axios.get(`https://rugfi-bk-v2-production.up.railway.app/api/token/rug-verifier/${creatorAddress}`);
+        return response.data;
+    } catch (error) {
+        console.error(`Error fetching rug verifier data for ${creatorAddress}:`, error.message);
+        return {
+            success: false,
+            totalTokens: 0,
+            totalRugs: 0
+        };
+    }
+};
+
 const readTokensFromFile = async () => {
     try {
         await fs.access(TOKENS_FILE_PATH);
@@ -109,6 +123,7 @@ const transformTokenData = (tokens) => {
         tokenName: token.token_name,
         tokenSymbol: token.token_symbol,
         createdAt: new Date(token.create_time * 1000).toISOString(),
+        rugData: token.rugVerifierData || null,
         arenaUserInfo: {
             community: {
                 photoURL: token.photo_url,
@@ -191,7 +206,19 @@ const monitorTokensAboutToMigrate = async () => {
         return;
     }
 
-    const newTokens = transformTokenData(rawTokens);
+    // Fetch rug verifier data for each token
+    console.log('Fetching rug verifier data for each token...');
+    const tokensWithRugData = await Promise.all(
+        rawTokens.map(async (token) => {
+            const rugVerifierData = await fetchRugVerifierData(token.creator_address);
+            return {
+                ...token,
+                rugVerifierData
+            };
+        })
+    );
+
+    const newTokens = transformTokenData(tokensWithRugData);
     const oldTokens = await readTokensAboutToMigrateFromFile();
 
     // Simple comparison by stringifying the objects
@@ -234,6 +261,6 @@ app.listen(PORT, () => {
     // Start monitoring immediately and then every 3 seconds
     monitorTokens();
     monitorTokensAboutToMigrate();
-    setInterval(monitorTokens, 3000);
-    setInterval(monitorTokensAboutToMigrate, 10000);
+    setInterval(monitorTokens, process.env.TOKENS_INTERVAL);
+    setInterval(monitorTokensAboutToMigrate, process.env.TOKENS_ABOUT_TO_INTERVAL);
 }); 

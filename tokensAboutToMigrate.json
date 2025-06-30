@@ -1,0 +1,561 @@
+[
+  {
+    "tokenId": 84053,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0x500e6d6ab56eabf6994b292b525e94dab43d27ec",
+    "creatorAddressFake": "0x500e6d6ab56eabf6994b292b525e94dab43d27ec",
+    "tokenContractAddress": "0x80ed2190f51b0a68a69b1e4fe7ac618cdc073f49",
+    "tokenName": "ZOG ARENA",
+    "tokenSymbol": "ZOG",
+    "createdAt": "2025-06-29T09:48:24.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "84053",
+          "name": "ZOG ARENA",
+          "transfervalue": "2481062577.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "6/29/2025, 9:48:24 AM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/58c9a5dd-5e96-3252-79c8-61ccec2827ec1751190465740.jpeg",
+        "tokenName": "ZOG ARENA",
+        "transactionHash": "0xd58031123ae85bf705221eda9682b09c6691b309a50592d9a81e757d42ed918a",
+        "bcGroupId": 84053,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": null,
+          "twitterHandle": null,
+          "twitterName": null,
+          "twitterPicture": null,
+          "twitterFollowers": null,
+          "ixHandle": null,
+          "handle": null
+        },
+        "stats": {
+          "totalVolume": 12342.076946143396,
+          "txs": 212,
+          "price": 0.0000023856097919696394,
+          "lastPrice": 0.0000023856097919696394,
+          "marketCap": 0.0000023856097919696394,
+          "lastMarketCap": 0.0000023856097919696394,
+          "marketCapUsd": 0.0000023856097919696394,
+          "totalSupply": 5756040567,
+          "createdOn": "2025-06-29T09:48:24.000Z",
+          "holders": 182
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 52595,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0xaa94e4239c737481582e7e1ff75f18278194bf5a",
+    "creatorAddressFake": "0xaa94e4239c737481582e7e1ff75f18278194bf5a",
+    "tokenContractAddress": "0xbeefd846e68e03459da08b522b2228d11a78b393",
+    "tokenName": "raw bull",
+    "tokenSymbol": "RAWBULL",
+    "createdAt": "2025-06-12T00:20:30.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 1,
+      "rugs": [
+        {
+          "id": "52595",
+          "name": "raw bull",
+          "transfervalue": "4508389901.0",
+          "saleAmount": "4508389901.0",
+          "rug": true,
+          "date": "6/12/2025, 12:20:30 AM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/07a534ba-2930-393e-853a-79dc952eeea51749687607807.jpeg",
+        "tokenName": "raw bull",
+        "transactionHash": "0xeac3d2377ebdfec295f7f217d0441b3d4c970dc1c30d765c70649610dea8da07",
+        "bcGroupId": 52595,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": null,
+          "twitterHandle": null,
+          "twitterName": null,
+          "twitterPicture": null,
+          "twitterFollowers": null,
+          "ixHandle": null,
+          "handle": null
+        },
+        "stats": {
+          "totalVolume": 11932.872015744113,
+          "txs": 241,
+          "price": 4.9572237058962666e-8,
+          "lastPrice": 4.9572237058962666e-8,
+          "marketCap": 4.9572237058962666e-8,
+          "lastMarketCap": 4.9572237058962666e-8,
+          "marketCapUsd": 4.9572237058962666e-8,
+          "totalSupply": 5338132523,
+          "createdOn": "2025-06-12T00:20:30.000Z",
+          "holders": 89
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 78365,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0x4548d6501d3c96fdef40d317abd33490ff4d60ff",
+    "creatorAddressFake": "0x4548d6501d3c96fdef40d317abd33490ff4d60ff",
+    "tokenContractAddress": "0xff617ca42b5398bf2e675161e3bd92a501215b29",
+    "tokenName": "BOFU is Evil",
+    "tokenSymbol": "BOFU",
+    "createdAt": "2025-06-25T20:29:24.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "78365",
+          "name": "BOFU is Evil",
+          "transfervalue": "1450934197.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "6/25/2025, 8:29:24 PM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/7ef15f2a-ce8f-92e1-f609-aacc1ad11b141750883283862.jpeg",
+        "tokenName": "BOFU is Evil",
+        "transactionHash": "0x4b84560befbcb6ab505d8443a4b6c08bdde70b46cf6f782b516be65ec9794b64",
+        "bcGroupId": 78365,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": "Bofuisevil",
+          "twitterHandle": "Bofuisevil",
+          "twitterName": "Bofuisevil",
+          "twitterPicture": "https://static.starsarena.com/uploads/03f00414-0355-9d28-0c58-39b40050cd361750805038842.png",
+          "twitterFollowers": 26,
+          "ixHandle": "Bofuisevil",
+          "handle": "Bofuisevil"
+        },
+        "stats": {
+          "totalVolume": 67498.85098845791,
+          "txs": 1769,
+          "price": 0.0000014112022463182394,
+          "lastPrice": 0.0000014112022463182394,
+          "marketCap": 0.0000014112022463182394,
+          "lastMarketCap": 0.0000014112022463182394,
+          "marketCapUsd": 0.0000014112022463182394,
+          "totalSupply": 4438952807,
+          "createdOn": "2025-06-25T20:29:24.000Z",
+          "holders": 557
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 61199,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0xa72691a10fb85fc2ebcdc2d1c9721e77217be1ce",
+    "creatorAddressFake": "0xa72691a10fb85fc2ebcdc2d1c9721e77217be1ce",
+    "tokenContractAddress": "0x3b75400f39e5c0717d4ed4bc8716ffb3bcb965d8",
+    "tokenName": "WifeWeddingRing",
+    "tokenSymbol": "RING",
+    "createdAt": "2025-06-15T14:26:47.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "61199",
+          "name": "WifeWeddingRing",
+          "transfervalue": "1562971483.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "6/15/2025, 2:26:47 PM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/d38bd375-9b82-2c9f-9049-ef860a0c68e71749997534426.jpeg",
+        "tokenName": "WifeWeddingRing",
+        "transactionHash": "0xf92aedc121530d17f12c9a1eca569cd536ef1319c609aa147175c59503c95cab",
+        "bcGroupId": 61199,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": null,
+          "twitterHandle": null,
+          "twitterName": null,
+          "twitterPicture": null,
+          "twitterFollowers": null,
+          "ixHandle": null,
+          "handle": null
+        },
+        "stats": {
+          "totalVolume": 3561.9041143874774,
+          "txs": 101,
+          "price": 0.0000013759013590556445,
+          "lastPrice": 0.0000013759013590556445,
+          "marketCap": 0.0000013759013590556445,
+          "lastMarketCap": 0.0000013759013590556445,
+          "marketCapUsd": 0.0000013759013590556445,
+          "totalSupply": 4371372254,
+          "createdOn": "2025-06-15T14:26:47.000Z",
+          "holders": 64
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 84799,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0x17722ec446e5bd8d9fedc89e149a55d0e0566205",
+    "creatorAddressFake": "0x17722ec446e5bd8d9fedc89e149a55d0e0566205",
+    "tokenContractAddress": "0xb69c579ddda732cd99c6d171d96445a66f897808",
+    "tokenName": "Pop The Snake",
+    "tokenSymbol": "POP",
+    "createdAt": "2025-06-29T22:11:11.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "84799",
+          "name": "Pop The Snake",
+          "transfervalue": "1151607235.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "6/29/2025, 10:11:11 PM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/fd4930c6-870c-e49c-fe6a-5a84cb38dc861751235040660.jpeg",
+        "tokenName": "Pop The Snake",
+        "transactionHash": "0xd3cb12f65473bfcb6821bd28b89bba522438d788a78982762e898ac31df976e6",
+        "bcGroupId": 84799,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": null,
+          "twitterHandle": null,
+          "twitterName": null,
+          "twitterPicture": null,
+          "twitterFollowers": null,
+          "ixHandle": null,
+          "handle": null
+        },
+        "stats": {
+          "totalVolume": 2094.1725581291325,
+          "txs": 99,
+          "price": 0.0000013557623394912908,
+          "lastPrice": 0.0000013557623394912908,
+          "marketCap": 0.0000013557623394912908,
+          "lastMarketCap": 0.0000013557623394912908,
+          "marketCapUsd": 0.0000013557623394912908,
+          "totalSupply": 4342075015,
+          "createdOn": "2025-06-29T22:11:11.000Z",
+          "holders": 39
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 9290,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0x542e99d7204aedcf0ce2dfbb429d396377ff350c",
+    "creatorAddressFake": "0x542e99d7204aedcf0ce2dfbb429d396377ff350c",
+    "tokenContractAddress": "0xa479796434c668dce1881ed1e0d88fe87aadadb8",
+    "tokenName": "Red Frooogs Ecosystem",
+    "tokenSymbol": "REDFO",
+    "createdAt": "2025-05-10T01:16:29.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "9290",
+          "name": "Red Frooogs Ecosystem",
+          "transfervalue": "575803617.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "5/10/2025, 1:16:29 AM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/6508a3ad-ed36-5dab-90b7-1230f53dec051746839485488.jpeg",
+        "tokenName": "Red Frooogs Ecosystem",
+        "transactionHash": "0xb0139543d89b430710c95ba22a8c29cbc9b090796b4c1adfe0d42d3bb84db952",
+        "bcGroupId": 9290,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": "red_frog_lady",
+          "twitterHandle": "red_frog_lady",
+          "twitterName": "red_frog_lady",
+          "twitterPicture": "https://static.starsarena.com/uploads/874919f8-939a-b12d-ef24-5def2d732bf11746617973471.png",
+          "twitterFollowers": 796,
+          "ixHandle": "red_frog_lady",
+          "handle": "red_frog_lady"
+        },
+        "stats": {
+          "totalVolume": 137629.77870847748,
+          "txs": 1420,
+          "price": 0.0000012423387266560556,
+          "lastPrice": 0.0000012423387266560556,
+          "marketCap": 0.0000012423387266560556,
+          "lastMarketCap": 0.0000012423387266560556,
+          "marketCapUsd": 0.0000012423387266560556,
+          "totalSupply": 4238016681,
+          "createdOn": "2025-05-10T01:16:29.000Z",
+          "holders": 304
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 1,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0x3e981f5af6116eef771623714f01af11eb397323",
+    "creatorAddressFake": "0x3e981f5af6116eef771623714f01af11eb397323",
+    "tokenContractAddress": "0x0f178a941663d0329c57657a4817db532f2ca910",
+    "tokenName": "NN",
+    "tokenSymbol": "NN",
+    "createdAt": "2025-05-06T21:27:08.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "1",
+          "name": "NN",
+          "transfervalue": "N/A",
+          "saleAmount": null,
+          "rug": false,
+          "date": "5/6/2025, 9:27:08 PM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/c98e9e8c-f899-32fd-10c6-e6e5c62b1dda1746566780325.jpeg",
+        "tokenName": "NN",
+        "transactionHash": "0xd290b6d297b940e55e92474483cde49e489e572c0652815156ac495e25e6b8c2",
+        "bcGroupId": 1,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": "valeg66655977",
+          "twitterHandle": "valeg66655977",
+          "twitterName": "valeg66655977",
+          "twitterPicture": "https://static.starsarena.com/uploads/6d196932-1baf-9b01-915a-8aac2cacaf3f1739964158433.png",
+          "twitterFollowers": 80,
+          "ixHandle": "valeg66655977",
+          "handle": "valeg66655977"
+        },
+        "stats": {
+          "totalVolume": 72579.3404850994,
+          "txs": 360,
+          "price": 0.0000011801150081507144,
+          "lastPrice": 0.0000011801150081507144,
+          "marketCap": 0.0000011801150081507144,
+          "lastMarketCap": 0.0000011801150081507144,
+          "marketCapUsd": 0.0000011801150081507144,
+          "totalSupply": 4207201888,
+          "createdOn": "2025-05-06T21:27:08.000Z",
+          "holders": 140
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 747,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0x66561e74e32c32010f6bbfa118e1ab085a6f0b9c",
+    "creatorAddressFake": "0x66561e74e32c32010f6bbfa118e1ab085a6f0b9c",
+    "tokenContractAddress": "0xde34c06de75fb446b5e7b8dd272d014f2a19009d",
+    "tokenName": "Vitrene",
+    "tokenSymbol": "VIT",
+    "createdAt": "2025-05-07T17:07:06.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 0,
+      "totalRugs": 0,
+      "rugs": []
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/735bec20-7f4a-613e-10b2-816e7d7a140c1746637576890.jpeg",
+        "tokenName": "Vitrene",
+        "transactionHash": "0x1e450f0669cabdb1b24337b99ff3cfa92a1e76bb2cb962a4d54b755a4cee2804",
+        "bcGroupId": 747,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": "vit_rene2502",
+          "twitterHandle": "vit_rene2502",
+          "twitterName": "vit_rene2502",
+          "twitterPicture": "https://static.starsarena.com/uploads/1ad1dd1d-c980-895a-1923-9306fea999b41749143832227.png",
+          "twitterFollowers": 2475,
+          "ixHandle": "vit_rene2502",
+          "handle": "vit_rene2502"
+        },
+        "stats": {
+          "totalVolume": 14746.695929734098,
+          "txs": 258,
+          "price": 0.0000011953514316863363,
+          "lastPrice": 0.0000011953514316863363,
+          "marketCap": 0.0000011953514316863363,
+          "lastMarketCap": 0.0000011953514316863363,
+          "marketCapUsd": 0.0000011953514316863363,
+          "totalSupply": 4074247693,
+          "createdOn": "2025-05-07T17:07:06.000Z",
+          "holders": 124
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 52599,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0xd019d53f5d9693949579bbd307f3e664bdaae1e3",
+    "creatorAddressFake": "0xd019d53f5d9693949579bbd307f3e664bdaae1e3",
+    "tokenContractAddress": "0xa1071582116b9db17092003da01b19f9eb3e5c90",
+    "tokenName": "TheWolfgangAVAX",
+    "tokenSymbol": "WOLF",
+    "createdAt": "2025-06-12T00:23:36.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 1,
+      "totalRugs": 1,
+      "rugs": [
+        {
+          "id": "52599",
+          "name": "TheWolfgangAVAX",
+          "transfervalue": "1883491815.0",
+          "saleAmount": "1883491815.0",
+          "rug": true,
+          "date": "6/12/2025, 12:23:36 AM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/3c30b1af-2d4b-a480-a3f2-dfc5bbc3dac31749687769777.jpeg",
+        "tokenName": "TheWolfgangAVAX",
+        "transactionHash": "0x440fc8ed718c2ebe481220796bf2a8e7eeec80867d06666dfe797f3d7d529701",
+        "bcGroupId": 52599,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": "TheWolfGangNFT",
+          "twitterHandle": "TheWolfGangNFT",
+          "twitterName": "TheWolfGangNFT",
+          "twitterPicture": "https://static.starsarena.com/uploads/daf6ff8f-8ad0-a8d7-89bc-35016a816a821749685490082.png",
+          "twitterFollowers": 12039,
+          "ixHandle": "TheWolfGangNFT",
+          "handle": "TheWolfGangNFT"
+        },
+        "stats": {
+          "totalVolume": 8544.170824158318,
+          "txs": 127,
+          "price": 3.2592555927672763e-9,
+          "lastPrice": 3.2592555927672763e-9,
+          "marketCap": 3.2592555927672763e-9,
+          "lastMarketCap": 3.2592555927672763e-9,
+          "marketCapUsd": 3.2592555927672763e-9,
+          "totalSupply": 3899312102,
+          "createdOn": "2025-06-12T00:23:36.000Z",
+          "holders": 37
+        }
+      }
+    }
+  },
+  {
+    "tokenId": 80087,
+    "tokenSupply": "10000000000000000000000000000",
+    "creatorAddress": "0xcbb96ca7841f7677f9b6159c39849dd3d431324b",
+    "creatorAddressFake": "0xcbb96ca7841f7677f9b6159c39849dd3d431324b",
+    "tokenContractAddress": "0x47f975cd652eb0e25464070fb7c9998da8e3bc70",
+    "tokenName": "NOTHING",
+    "tokenSymbol": "NOTHING",
+    "createdAt": "2025-06-26T19:34:57.000Z",
+    "rugData": {
+      "success": true,
+      "totalTokens": 2,
+      "totalRugs": 0,
+      "rugs": [
+        {
+          "id": "80087",
+          "name": "NOTHING",
+          "transfervalue": "2481062577.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "6/26/2025, 7:34:57 PM"
+        },
+        {
+          "id": "80067",
+          "name": "NOTHING",
+          "transfervalue": "1969220672.0",
+          "saleAmount": null,
+          "rug": false,
+          "date": "6/26/2025, 7:14:11 PM"
+        }
+      ]
+    },
+    "arenaUserInfo": {
+      "community": {
+        "photoURL": "https://static.starsarena.com/uploads/203a5242-d9ff-777e-c330-af01a4afabff1750966407260.jpeg",
+        "tokenName": "NOTHING",
+        "transactionHash": "0x11280d75ded2f66b189589304cb89635f14e80cd061c495a291d8b764a02d186",
+        "bcGroupId": 80087,
+        "isLP": false,
+        "isOfficial": null,
+        "owner": {
+          "twitterId": "NFT_GOD_666",
+          "twitterHandle": "NFT_GOD_666",
+          "twitterName": "NFT_GOD_666",
+          "twitterPicture": "https://static.starsarena.com/uploads/4af5ee8b-b1e5-31e0-dcea-3f58543037881748958095350.png",
+          "twitterFollowers": 442,
+          "ixHandle": "NFT_GOD_666",
+          "handle": "NFT_GOD_666"
+        },
+        "stats": {
+          "totalVolume": 2623.575222043123,
+          "txs": 56,
+          "price": 0.0000011041445365810482,
+          "lastPrice": 0.0000011041445365810482,
+          "marketCap": 0.0000011041445365810482,
+          "lastMarketCap": 0.0000011041445365810482,
+          "marketCapUsd": 0.0000011041445365810482,
+          "totalSupply": 3893433591,
+          "createdOn": "2025-06-26T19:34:57.000Z",
+          "holders": 48
+        }
+      }
+    }
+  }
+]
